@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pierre, feuille, ciseau</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> </head>
+<body class="body">
+  <h1 class="title">Pierre, feuille, ciseau</h1>
+  <div class="containerScore">
+    <div class="score">Joueur <span id="playerScore">0</span></div>
+    <div class="score">Robot <span id="botScore">0</span></div>
+  </div>
+  <div class="containerBtn">
+    <button class="btnStart" id="start" onclick="start()">Nouvelle partie</button>
+    <div class="counter" id="counter"></div>
+  </div>
+  <div class="displayNone" id="containerHands">
+    <button class="btnHands" onclick="playerChoice(0)">
+      <img class="hands" src="./assets/pierre.png" alt="pierre">
+    </button>
+    <button class="btnHands" onclick="playerChoice(1)">
+      <img class="hands" src="./assets/feuille.png" alt="pierre">
+    </button>
+    <button class="btnHands" onclick="playerChoice(2)">
+      <img class="hands" src="./assets/ciseaux.png" alt="pierre">
+    </button>
+  </div>
+  <div class="endScreen" id="endScreen"></div>
+  <div class="canvas" id="canvas"></div>
+  <script src="./script.js"></script>
+</body>
+</html>

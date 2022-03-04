@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  font-family: "VT323", monospace;
+  position: relative;
+
+  .displayNone {
+    display: none;
+  }
+
+  .title {
+    font-size: 100px;
+    margin: 30px 0;
+  }
+
+  .containerScore {
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    .score {
+      font-size: 35px;
+    }
+  }
+
+  .canvas {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+
+    .resultHands {
+      width: 400px;
+    }
+  }
+
+  .endScreen {
+    font-size: 35px;
+  }
+
+  .containerBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btnStart {
+      font-family: inherit;
+      font-size: 35px;
+      padding: 5px 25px;
+      background-color: #B25E06;
+      border: none;
+      box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+    }
+  
+    .btnStart:active {
+      box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.8);
+    }
+
+    .counter {
+      display: block;
+      font-size: 50px;
+    }
+  }
+
+  .containerHands {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+
+    .btnHands {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      .hands {
+        width: 200px;
+      }
+    }
+  }
+}
