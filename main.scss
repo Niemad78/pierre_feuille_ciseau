@@ -96,3 +96,45 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .body {
+    .title {
+      font-size: 30px;
+    }
+
+    .containerScore {
+      width: 90vw;
+
+      .score {
+        font-size: 25px;
+      }
+    }
+
+    .canvas {
+      width: 90vw;
+
+      .resultHands {
+        width: 200px;
+      }
+    }
+
+    .endScreen {
+      font-size: 25px;
+    }
+
+    .containerBtn {
+      .btnStart {
+        font-size: 25px;
+      }
+    }
+
+    .containerHands {
+      .btnHands {
+        .hands {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

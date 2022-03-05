@@ -83,4 +83,31 @@
   width: 200px;
 }
 
+@media screen and (max-width: 768px) {
+  .body .title {
+    font-size: 30px;
+  }
+  .body .containerScore {
+    width: 90vw;
+  }
+  .body .containerScore .score {
+    font-size: 25px;
+  }
+  .body .canvas {
+    width: 90vw;
+  }
+  .body .canvas .resultHands {
+    width: 200px;
+  }
+  .body .endScreen {
+    font-size: 25px;
+  }
+  .body .containerBtn .btnStart {
+    font-size: 25px;
+  }
+  .body .containerHands .btnHands .hands {
+    width: 100px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
